@@ -62,7 +62,7 @@ interface State {
  * for the current Square app you're developing
  * * **locationId**: You can retrieve this from the [Square Connect v2 Locations API](https://docs.connect.squareup.com/api/connect/v2#navsection-locations);
  * or your [Square Developer Dashboard](https://connect.squareup.com/apps).
- * It determines which Square location will receive credit for transactions made with this form.
+ * It determines which Square location will receive credit for payments made with this form.
  * * **cardNonceResponseReceived**: This callback gives you a nonce to pass to your back-end server to make a "charge" request to Square.
  * * **createVerificationDetails**: This callback returns data used for [Strong Customer Authentication](https://developer.squareup.com/docs/sca-overview)
  *
