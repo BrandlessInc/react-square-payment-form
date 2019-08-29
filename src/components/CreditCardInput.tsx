@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { ContextConsumer } from './Context'
 
-export interface CreditCardNumberInputProps {
+export interface CreditCardInputProps {
   /** Input field label */
   label?: string;
 }
@@ -10,7 +10,7 @@ export interface CreditCardNumberInputProps {
  * element with a secure `<iframe>` tag that will render an `<input>` field for the card number, expiration date, zip,
  * and cvv.
  */
-class CreditCardInput extends React.Component<CreditCardNumberInputProps> {
+class CreditCardInput extends React.Component<CreditCardInputProps> {
 
   static defaultProps = {
     label: 'Credit Card'
