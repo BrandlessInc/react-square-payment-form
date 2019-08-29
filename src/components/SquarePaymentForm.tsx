@@ -228,6 +228,9 @@ class SquarePaymentForm extends React.Component<SquarePaymentFormProps, State> {
       config.masterpass = { elementId: `${props.formId}-sq-masterpass` }
     }
 
+    if (document.getElementById(`${props.formId}-sq-card`)) {
+      config.card = { elementId: `${props.formId}-sq-card` }
+    }
     if (document.getElementById(`${props.formId}-sq-card-number`)) {
       config.cardNumber = { elementId: `${props.formId}-sq-card-number`, placeholder: '• • • •  • • • •  • • • •  • • • •' }
     }
